@@ -1,22 +1,13 @@
 #include <DigisparkRGB.h>
 #include <TinyWireM.h>
-/*
- Digispark RGB
 
- This example shows how to use soft PWM to fade 3 colors.
- Note: This is only necessary for PB2 (pin 2) - Blue, as Red (pin 0) and Green (pin 1) as well as pin 4 support the standard Arduino analogWrite() function.
-
- This example code is in the public domain.
- */
 //Primary Colors
 byte RED = 0;
 byte GREEN = 1;
 byte BLUE = 2;
-byte button_state = LOW;
 
 
-
-// the setup routine runs once when you press reset:
+// The setup routine runs once when you press reset:
 void setup()  {
  
   pinMode(3, INPUT);// Analog read from battery
